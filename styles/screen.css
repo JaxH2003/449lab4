@@ -49,5 +49,5 @@ img.about {
 
 main {
     display:grid;
-    grid-template-columns: 
+    grid-template-columns: 1fr 1fr 1fr;
 }
