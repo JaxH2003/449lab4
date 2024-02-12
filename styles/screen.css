@@ -12,8 +12,6 @@ h1 {
 }
 
 :root {
-    --jack-favorite-color: blue;
-    --jack-baseline-grid: 8px;
     --jack-border: 1 px solid #000;
 }
 
@@ -26,14 +24,15 @@ main {
 }
 
 .planet {
-    background: #a6a5a5;
+    background: #a0a0a0;
     color: black;
     display: flex;
     border: var(--jack-border);
     border-radius: 10px;
-    align-items: center;
+    align-items:end;
     justify-content: center;
-    text-align: center;
+    text-align:;
+    padding: 20px;
 }
 
 .planet:hover {
@@ -43,11 +42,12 @@ main {
 
 
 .planet.sun {
+    display: grid;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    border: var(--jack-border)
+    border: var(--jack-border);
 }
 
 .planet.mercury {
@@ -59,8 +59,7 @@ main {
 }
 
 .planet.earth {
-    border: var(--jack-border);
-    border-radius:
+
 }
 
 .planet.mars {
@@ -76,9 +75,7 @@ main {
 }
 
 .planet.uranus {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  
 }
 
 .planet.neptune {
