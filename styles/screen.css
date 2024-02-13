@@ -16,7 +16,7 @@ h1 {
     --jack-border: 1 px solid #000;
     --circle-size: 80px;
     --sun-color: #ffd700;
-    --mercury-color: rgb(134, 129, 129);
+    --mercury-color: rgba(134, 129, 129, 100);
     --venus-color: orange;
     --earth-color: green;
     --mars-color: red;
@@ -34,8 +34,9 @@ main {
 .planets {
     display:grid;
     grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     background: #424242;
-    gap: 100px;
+    gap: 60px;
 }
 
 .planet {
@@ -43,6 +44,7 @@ main {
     border: var(--jack-border);
     text-align:center;
     padding: 20px;
+    border-radius: 20px;
 }
 
 .planet:hover {
@@ -57,12 +59,9 @@ main {
 }
 
 .sun {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
     background-color: var(--sun-color);
 }
+
 
 .mercury {
     background-color: var(--mercury-color)
