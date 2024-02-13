@@ -1,6 +1,6 @@
 body {
     font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
+    color: #000000;
     background: #424242;
     padding: 0 40px;
     text-align: left;
@@ -9,31 +9,38 @@ body {
 h1 {
     font-size: 4em;
     letter-spacing: -2px;
+    color:whitesmoke;
 }
 
 :root {
     --jack-border: 1 px solid #000;
+    --circle-size: 80px;
+    --sun-color: #ffd700;
+    --mercury-color: rgb(134, 129, 129);
+    --venus-color: orange;
+    --earth-color: green;
+    --mars-color: red;
+    --jupiter-color: #caa677; 
+    --saturn-color: #ab8f08;
+    --uranus-color: #78d2e7;
+    --neptune-color:blue; 
 }
 
 main {
     display:flex;
-    justify-content: center;
+    justify-content: left;
     padding:20px;
 }
 .planets {
     display:grid;
     grid-template-columns: repeat(6, 1fr);
     background: #424242;
-    gap: 60px;
+    gap: 100px;
 }
 
 .planet {
     background-color: #a0a0a0;
-    border-radius:50%;
     border: var(--jack-border);
-    border-radius: 10px;
-    align-items:end;
-    justify-content: center;
     text-align:center;
     padding: 20px;
 }
@@ -43,9 +50,48 @@ main {
     border: var(--jack-border);
 }
 
- .planet.sun {
+.planet-shape {
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+}
+
+.sun {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+    background-color: var(--sun-color);
+}
+
+.mercury {
+    background-color: var(--mercury-color)
+}
+
+.venus {
+    background-color: var(--venus-color);
+}
+
+.earth {
+    background-color: var(--earth-color);
+}
+
+.mars {
+    background-color: var(--mars-color);
+}
+
+.jupiter {
+    background-color: var(--jupiter-color);
+}
+
+.saturn {
+    background-color: var(--saturn-color);
+}
+
+.uranus {
+    background-color: var(--uranus-color);
+}
+
+.neptune {
+    background-color: var(--neptune-color);
 }
