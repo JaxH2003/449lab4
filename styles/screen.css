@@ -44,7 +44,7 @@ main {
     border: var(--jack-border);
     text-align:center;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .planet:hover {
@@ -56,6 +56,7 @@ main {
     width: var(--circle-size);
     height: var(--circle-size);
     border-radius: 50%;
+    margin-left: 8px;
 }
 
 .sun {
